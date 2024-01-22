@@ -1,0 +1,146 @@
+.app__navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 70px;
+  width: 100%;
+  padding:2rem 1rem;
+  box-sizing: border-box;
+}
+
+.app__navbar-logo{
+  
+  width: 230px;
+  height: 50px;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__navbar-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.app__navbar-tabs{
+  flex: 1;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  margin: 1rem 2rem;
+ max-width: 400px;
+ font-size: 20px;
+}
+
+.app__navbar-tabs li :hover{
+  color: #E3B748;
+}
+a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+.app__navbar-contact{
+
+  width: max-content;
+  margin: 1rem;
+
+}
+
+.app__navbar-contact button{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+}
+
+.dropmenu{
+  display: none;
+}
+
+.dropmenu__open{
+  color: white;
+  font-size: 30px;
+margin: 2rem;
+}
+
+.dropmenu__tabs{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem;
+  font-size: 30px;
+}
+
+.dropmenu__tabs li {
+  margin: 2rem;
+}
+
+.dropmenu__layout{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: black;
+   flex-direction: column;
+   z-index: 5;
+}
+
+.dropmenu__close{
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
+
+ 
+
+
+@media screen and (max-width:900px) {
+
+  
+  .app__navbar-tabs{
+    display: none;
+  }
+
+  .app__navbar-contact{
+    display: none;
+  }
+
+  .dropmenu{
+    display: flex;
+  }
+
+  
+}
+
+@media screen and (max-width :540px) {
+  
+
+  .app__navbar-logo img{
+   width: 80%;
+   height: 80%;
+   object-fit: contain;
+  }
+
+  .dropmenu__open{
+    margin: 2rem 0;
+  }
+}
